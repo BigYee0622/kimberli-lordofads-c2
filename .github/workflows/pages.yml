@@ -25,14 +25,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
+        id: pages
+        continue-on-error: true
         uses: actions/configure-pages@v5
         with:
-          # First run creates the Pages site (GitHub Actions source) when the token allows it.
+          # Creating the site needs administration permission this token does not have.
+          # After an admin sets Pages → Source to GitHub Actions, this step succeeds and deploy runs.
           enablement: true
       - name: Upload artifact
+        if: steps.pages.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
       - name: Deploy to GitHub Pages
         id: deployment
+        if: steps.pages.outcome == 'success'
         uses: actions/deploy-pages@v5
