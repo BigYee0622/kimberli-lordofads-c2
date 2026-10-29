@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecommerce AI Video Editor — Selected Work</title>
+  <meta name="description" content="Organized portfolio of ecommerce AI video ads: cold-commerce product spots and before/after serum creatives. CTA-strong, 9:16, ~15s." />
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --bg-elev: #12161c;
+      --bg-card: #161b22;
+      --border: #2a323d;
+      --text: #e8edf4;
+      --muted: #9aa6b5;
+      --accent: #5b8cff;
+      --accent-hover: #7aa3ff;
+      --accent-soft: rgba(91, 140, 255, 0.14);
+      --green: #3ecf8e;
+      --radius: 14px;
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      --max: 1080px;
+      --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    /* Header */
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(12px);
+      background: rgba(11, 13, 16, 0.82);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      color: var(--text);
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #9b7bff);
+      display: grid;
+      place-items: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.92rem;
+    }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.15rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      color: #fff;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+    .btn-ghost:hover {
+      border-color: var(--muted);
+      color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 4.5rem 0 3.25rem;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -20% 10% auto;
+      height: 380px;
+      background: radial-gradient(ellipse at center, rgba(91,140,255,0.18), transparent 65%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-hover);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+    }
+    .eyebrow .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 3px rgba(62, 207, 142, 0.25);
+    }
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      font-weight: 750;
+      max-width: 18ch;
+      margin-bottom: 1rem;
+    }
+    .hero-lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 42rem;
+      margin-bottom: 1.75rem;
+    }
+    .hero-lead strong { color: var(--text); font-weight: 600; }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.25rem;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.4rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .meta-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .meta-row .check {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    /* Section */
+    section.work { padding: 1rem 0 3.5rem; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+    .section-head p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Project cards */
+    .projects {
+      display: grid;
+      gap: 1.75rem;
+    }
+    .project {
+      display: grid;
+      grid-template-columns: minmax(180px, 280px) 1fr;
+      gap: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+    @media (max-width: 760px) {
+      .project {
+        grid-template-columns: 1fr;
+      }
+      .nav-links .hide-sm { display: none; }
+      h1 { max-width: none; }
+    }
+
+    .video-shell {
+      position: relative;
+      background: #000;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 9 / 16;
+      border: 1px solid var(--border);
+      max-width: 280px;
+      margin-inline: auto;
+      width: 100%;
+    }
+    .video-shell video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #000;
+    }
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.55rem;
+      border-radius: 6px;
+      background: rgba(0,0,0,0.65);
+      color: #fff;
+      backdrop-filter: blur(6px);
+    }
+
+    .project-body { display: flex; flex-direction: column; gap: 0.85rem; min-width: 0; }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--accent-hover);
+      background: var(--accent-soft);
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+    }
+    .project-body h3 {
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .project-body .blurb {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .process {
+      margin-top: 0.25rem;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+    }
+    .process h4 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.55rem;
+    }
+    .beats {
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+      font-size: 0.9rem;
+    }
+    .beats li {
+      display: grid;
+      grid-template-columns: 5.5rem 1fr;
+      gap: 0.5rem;
+    }
+    .beats .label {
+      color: var(--accent-hover);
+      font-weight: 650;
+      font-size: 0.82rem;
+    }
+    .beats .desc { color: var(--muted); }
+    .specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: auto;
+      padding-top: 0.35rem;
+    }
+    .specs strong { color: var(--text); font-weight: 600; }
+
+    /* Skills strip */
+    .skills {
+      padding: 0 0 3.5rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 700px) {
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+    .skill-card {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.15rem;
+    }
+    .skill-card h3 {
+      font-size: 0.98rem;
+      margin-bottom: 0.35rem;
+    }
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* Contact */
+    #contact {
+      padding: 0 0 4rem;
+    }
+    .contact-box {
+      background: linear-gradient(160deg, rgba(91,140,255,0.12), transparent 55%), var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+    .contact-box h2 {
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+    .contact-box p { color: var(--muted); max-width: 36rem; font-size: 0.95rem; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+
+    /* Footer */
+    footer.site {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0 2.25rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer.site .foot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer.site a { color: var(--muted); }
+    footer.site a:hover { color: var(--accent-hover); }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">EA</span>
+        <span>FrameCraft Studio</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="hide-sm" href="#work">Work</a>
+        <a class="hide-sm" href="#skills">Skills</a>
+        <a class="btn btn-primary" href="#contact">Apply / Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Portfolio · Ecommerce AI Video Editor</p>
+        <h1>CTA-strong ecommerce ads, cut for conversion</h1>
+        <p class="hero-lead">
+          Fluent English editor specializing in <strong>AI-assisted product video</strong> for DTC &amp; ecommerce:
+          pain → product → proof → <strong>Shop now</strong>. Selected work below — organized, 9:16, ~15s, ready for paid social.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View selected work</a>
+          <a class="btn btn-ghost" href="mailto:hello@framecraft.studio?subject=LordofAds%20Senior%20AI%20Video%20Editor%20Application">Email application</a>
+        </div>
+        <div class="meta-row" role="list">
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Fluent English</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Ecommerce / DTC experience</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Organized before/after &amp; CTA edits</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> AI video workflow</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 id="work-heading">Selected work</h2>
+            <p>Two vertical ecommerce spots — cold-commerce product + before/after serum.</p>
+          </div>
+        </div>
+
+        <div class="projects">
+          <!-- AeroSip -->
+          <article class="project" id="aerosip">
+            <div class="video-shell">
+              <span class="badge">9:16 · ~15s</span>
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                poster=""
+                aria-label="AeroSip cold bottle ecommerce ad">
+                <source src="media/aerosip-c1a-final.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag">Cold-commerce</span>
+                <span class="tag">Product hero</span>
+                <span class="tag">Shop now CTA</span>
+              </div>
+              <h3>AeroSip — 24h cold bottle ad</h3>
+              <p class="blurb">
+                Ecommerce cold-drink / insulated bottle spot. Built to sell on scroll: open on the pain of warm drinks,
+                land the product hero, stack features, lifestyle proof, then a hard <strong>Shop now</strong> close.
+              </p>
+              <div class="process">
+                <h4>Process · edit beats</h4>
+                <ol class="beats">
+                  <li><span class="label">01 · Pain</span><span class="desc">Warm drink / missed cold — scroll-stopping opener</span></li>
+                  <li><span class="label">02 · Hero</span><span class="desc">Product reveal, condensation &amp; pack shot</span></li>
+                  <li><span class="label">03 · Features</span><span class="desc">24h cold claim + benefit line hits</span></li>
+                  <li><span class="label">04 · Lifestyle</span><span class="desc">In-use moments that feel shoppable</span></li>
+                  <li><span class="label">05 · CTA</span><span class="desc">Shop now — clear, on-brand, conversion-first</span></li>
+                </ol>
+              </div>
+              <div class="specs">
+                <span><strong>Format</strong> 9:16 vertical</span>
+                <span><strong>Length</strong> ~15 seconds</span>
+                <span><strong>Audio</strong> Mixed for feed</span>
+                <span><strong>Use</strong> Meta / TikTok / Reels</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- LumaGlow -->
+          <article class="project" id="lumaglow">
+            <div class="video-shell">
+              <span class="badge">9:16 · ~15s</span>
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                poster=""
+                aria-label="LumaGlow C-Boost Serum before after ecommerce ad">
+                <source src="media/lumaglow-c1b-final.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag">Before / After</span>
+                <span class="tag">UGC tone</span>
+                <span class="tag">Add to cart CTA</span>
+              </div>
+              <h3>LumaGlow — C-Boost Serum before/after</h3>
+              <p class="blurb">
+                Beauty ecommerce creative with a clear transformation arc. UGC-feel open, Day-7 before/after proof,
+                feature stack, then an unmistakable <strong>ADD TO CART</strong> — the before/after skill set
+                paid social buyers look for.
+              </p>
+              <div class="process">
+                <h4>Process · edit beats</h4>
+                <ol class="beats">
+                  <li><span class="label">01 · UGC</span><span class="desc">Native, creator-style hook for trust</span></li>
+                  <li><span class="label">02 · B/A</span><span class="desc">Before → After Day 7 — visible result</span></li>
+                  <li><span class="label">03 · Features</span><span class="desc">Serum benefits timed to product shots</span></li>
+                  <li><span class="label">04 · CTA</span><span class="desc">ADD TO CART — ecommerce close</span></li>
+                </ol>
+              </div>
+              <div class="specs">
+                <span><strong>Format</strong> 9:16 vertical</span>
+                <span><strong>Length</strong> ~15 seconds</span>
+                <span><strong>Focus</strong> Before/after proof</span>
+                <span><strong>Use</strong> Meta / TikTok / Reels</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 id="skills-heading">What I bring</h2>
+            <p>Aligned with senior LATAM / PA AI video editor needs for ecommerce brands.</p>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Ecommerce storytelling</h3>
+            <p>Pain → hero → features → lifestyle → CTA. Cuts paced for paid social retention and conversion.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Before / after mastery</h3>
+            <p>Clean splits, Day-N proof, and UGC-native framing so results feel believable — not overproduced.</p>
+          </div>
+          <div class="skill-card">
+            <h3>AI-assisted pipeline</h3>
+            <p>Fast iteration with AI gen + editorial polish: captions, rhythm, pack shots, and on-screen CTAs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <h2 id="contact-heading">Ready to join the team</h2>
+            <p>
+              Applying for the full-time senior AI video editor role — fluent English, ecommerce portfolio above,
+              organized and CTA-first. Happy to jump on a call or send more cuts on request.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@framecraft.studio?subject=LordofAds%20Senior%20AI%20Video%20Editor%20Application">Email me</a>
+            <a class="btn btn-ghost" href="#work">Rewatch work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <p>© 2026 FrameCraft Studio · Ecommerce AI Video Editor portfolio</p>
+      <p>
+        Job reference:
+        <a href="https://x.com/LordofAds/status/2115568793535557823" target="_blank" rel="noopener noreferrer">
+          @LordofAds hiring post
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
