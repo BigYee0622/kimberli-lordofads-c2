@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ecommerce AI Video Editor — Selected Work</title>
-  <meta name="description" content="Organized portfolio of ecommerce AI video ads: cold-commerce product spots and before/after serum creatives. CTA-strong, 9:16, ~15s." />
+  <title>FrameCraft Studio — Selected Work</title>
+  <meta name="description" content="Standing portfolio of AI-assisted product video: two 9:16 ecommerce spots and a 16:9 widescreen studio animation." />
   <style>
     :root {
       --bg: #0b0d10;
@@ -220,8 +220,16 @@
       padding: 1.25rem;
       box-shadow: var(--shadow);
     }
+    .project.wide {
+      grid-template-columns: minmax(280px, 1.4fr) 1fr;
+    }
+    .video-shell.wide {
+      aspect-ratio: 16 / 9;
+      max-width: none;
+    }
     @media (max-width: 760px) {
-      .project {
+      .project,
+      .project.wide {
         grid-template-columns: 1fr;
       }
       .nav-links .hide-sm { display: none; }
@@ -404,7 +412,7 @@
       <nav class="nav-links" aria-label="Primary">
         <a class="hide-sm" href="#work">Work</a>
         <a class="hide-sm" href="#skills">Skills</a>
-        <a class="btn btn-primary" href="#contact">Apply / Contact</a>
+        <a class="btn btn-primary" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -412,21 +420,22 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Portfolio · Ecommerce AI Video Editor</p>
-        <h1>CTA-strong ecommerce ads, cut for conversion</h1>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Portfolio · Product video</p>
+        <h1>CTA-strong product ads, cut for conversion</h1>
         <p class="hero-lead">
-          Fluent English editor specializing in <strong>AI-assisted product video</strong> for DTC &amp; ecommerce:
-          pain → product → proof → <strong>Shop now</strong>. Selected work below — organized, 9:16, ~15s, ready for paid social.
+          <strong>AI-assisted product video</strong> for ecommerce and studio spots:
+          pain → product → proof → <strong>CTA</strong>. Selected work below — two 9:16 vertical spots (~15s)
+          and one 16:9 widescreen animation (~18s).
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">View selected work</a>
-          <a class="btn btn-ghost" href="mailto:hello@framecraft.studio?subject=LordofAds%20Senior%20AI%20Video%20Editor%20Application">Email application</a>
+          <a class="btn btn-ghost" href="mailto:hello@framecraft.studio?subject=Portfolio%20inquiry">Get in touch</a>
         </div>
         <div class="meta-row" role="list">
-          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Fluent English</span>
-          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Ecommerce / DTC experience</span>
-          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Organized before/after &amp; CTA edits</span>
-          <span role="listitem"><span class="check" aria-hidden="true">✓</span> AI video workflow</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Two 9:16 vertical spots</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> One 16:9 widescreen animation</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> Before/after &amp; CTA edits</span>
+          <span role="listitem"><span class="check" aria-hidden="true">✓</span> AI-assisted workflow</span>
         </div>
       </div>
     </section>
@@ -436,7 +445,7 @@
         <div class="section-head">
           <div>
             <h2 id="work-heading">Selected work</h2>
-            <p>Two vertical ecommerce spots — cold-commerce product + before/after serum.</p>
+            <p>Two 9:16 ecommerce spots and one 16:9 studio animation — cold-commerce, before/after serum, and a spec earbud film.</p>
           </div>
         </div>
 
@@ -508,8 +517,7 @@
               <h3>LumaGlow — C-Boost Serum before/after</h3>
               <p class="blurb">
                 Beauty ecommerce creative with a clear transformation arc. UGC-feel open, Day-7 before/after proof,
-                feature stack, then an unmistakable <strong>ADD TO CART</strong> — the before/after skill set
-                paid social buyers look for.
+                feature stack, then an unmistakable <strong>ADD TO CART</strong>.
               </p>
               <div class="process">
                 <h4>Process · edit beats</h4>
@@ -528,6 +536,52 @@
               </div>
             </div>
           </article>
+
+          <!-- Orbita -->
+          <article class="project wide" id="orbita">
+            <div class="video-shell wide">
+              <span class="badge">16:9 · ~18s</span>
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                poster=""
+                aria-label="Orbita In Orbit In Sync 3D product animation">
+                <source src="media/orbita-in-orbit.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span class="tag">Spec ad</span>
+                <span class="tag">3D CG</span>
+                <span class="tag">Product animation</span>
+              </div>
+              <h3>Orbita — In Orbit. In Sync.</h3>
+              <p class="blurb">
+                Original 3D CG studio spot for <strong>Orbita</strong>, a fictional premium wireless-earbud brand.
+                Two silver-white buds orbit above an open charging case, dock into the wells, then lock up on the
+                closed lid with the <strong>ORBITA</strong> wordmark and the line “In orbit. In sync.”
+                Portfolio spec — not a paid client campaign.
+              </p>
+              <div class="process">
+                <h4>Process · animation beats</h4>
+                <ol class="beats">
+                  <li><span class="label">01 · Orbit</span><span class="desc">Silver-white buds turn above the open case</span></li>
+                  <li><span class="label">02 · Dock</span><span class="desc">They drop and seat in the charging wells</span></li>
+                  <li><span class="label">03 · Hero</span><span class="desc">Open-case hold, status light on</span></li>
+                  <li><span class="label">04 · Close</span><span class="desc">Lid shuts onto the ORBITA wordmark</span></li>
+                  <li><span class="label">05 · CTA</span><span class="desc">End card — “In orbit. In sync.”</span></li>
+                </ol>
+              </div>
+              <div class="specs">
+                <span><strong>Format</strong> 16:9 widescreen</span>
+                <span><strong>Length</strong> ~18 seconds</span>
+                <span><strong>Medium</strong> 3D CG studio</span>
+                <span><strong>Use</strong> Portfolio spec</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -537,7 +591,7 @@
         <div class="section-head">
           <div>
             <h2 id="skills-heading">What I bring</h2>
-            <p>Aligned with senior LATAM / PA AI video editor needs for ecommerce brands.</p>
+            <p>Story, proof, and an AI-assisted edit — the same process across the spots below.</p>
           </div>
         </div>
         <div class="skills-grid">
@@ -561,14 +615,14 @@
       <div class="wrap">
         <div class="contact-box">
           <div>
-            <h2 id="contact-heading">Ready to join the team</h2>
+            <h2 id="contact-heading">Happy to share more cuts</h2>
             <p>
-              Applying for the full-time senior AI video editor role — fluent English, ecommerce portfolio above,
-              organized and CTA-first. Happy to jump on a call or send more cuts on request.
+              This is a standing portfolio of product and ecommerce spots.
+              Happy to share more cuts, or walk through how a spot was built.
             </p>
           </div>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:hello@framecraft.studio?subject=LordofAds%20Senior%20AI%20Video%20Editor%20Application">Email me</a>
+            <a class="btn btn-primary" href="mailto:hello@framecraft.studio?subject=Portfolio%20inquiry">Email me</a>
             <a class="btn btn-ghost" href="#work">Rewatch work</a>
           </div>
         </div>
@@ -578,13 +632,7 @@
 
   <footer class="site">
     <div class="wrap foot">
-      <p>© 2026 FrameCraft Studio · Ecommerce AI Video Editor portfolio</p>
-      <p>
-        Job reference:
-        <a href="https://x.com/LordofAds/status/2115568793535557823" target="_blank" rel="noopener noreferrer">
-          @LordofAds hiring post
-        </a>
-      </p>
+      <p>© 2026 FrameCraft Studio · Product video portfolio</p>
     </div>
   </footer>
 </body>
